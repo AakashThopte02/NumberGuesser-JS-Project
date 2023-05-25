@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the number</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+    <style>
+      .container {
+        margin-top: 200px;
+        max-width: 600px;
+        padding: 50px;
+        border: 2px solid blueviolet;
+        border-radius: 20px;
+      }
+      h1 {
+        color: white;
+        text-shadow: -3px 0 blue, 0 3px blue, 3px 0 blue, 0 -3px blue;
+      }
+      div > p {
+        font-size: 20px;
+        position: relative;
+        left: 50px;
+        /* color: yellow; */
+        text-shadow: -1px 0 blue, 0 1px blue, 1px 0 blue, 0 -1px blue;
+      }
+      input {
+        position: relative;
+        left: 60px;
+        appearance: none;
+      }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Guess The Number</h1>
+      <div id="game">
+        <p>
+          Guess a number beetween <span class="min_num"></span> and
+          <span class="max_num"></span>
+        </p>
+        <input type="number" id="guess-input" placeholder="Enter your guess" />
+        <input type="submit" value="submit" id="guess-btn" />
+        <p class="message"></p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
